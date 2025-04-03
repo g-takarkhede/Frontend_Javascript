@@ -1,0 +1,163 @@
+Using document.write() after an HTML document is loaded, will delete all existing HTML:
+The document.write() method should only be used for testing.
+
+JavaScript Literals - fixed values
+Numbers and Strings
+
+
+A JavaScript name must begin with:
+
+A letter (A-Z or a-z)
+A dollar sign ($)
+Or an underscore (_)
+Subsequent characters may be letters, digits, underscores, or dollar signs
+
+
+JavaScript is Case Sensitive
+
+JavaScript does not interpret LET or Let as the keyword let.
+
+Variables names:
+Underscore
+Upper Camel Case (Pascal Case)
+Lower Camel Case
+
+JavaScript uses the Unicode character set.
+
+You cannot re-declare a variable declared with let or const.
+
+let x = 10;  // Block-scoped (preferred)
+const y = 20; // Immutable (preferred for constants)
+var z = 30;  // Function-scoped (not recommended in modern JS)
+
+only for var!!
+Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope
+ (to the top of the current script or the current function).
+
+
+let b = 6;
+let b = 7;
+ Cannot redeclare block-scoped variable 'b'.
+
+
+for instance, the main function $ is used to select HTML elements. In jQuery $("p"); 
+ means "select all p elements".
+
+
+Variables declared with let have Block Scope, 
+must be Declared before use,
+cannot be Redeclared in the same scope
+
+let and const keywords provided Block Scope in JavaScript:
+Variables declared with the var always have Global Scope.
+
+underscore (_) prefix : variable is private or should not be accessed directly.
+in ES6+ with # private fields in classes
+
+ var attaches to window, while let and const do not.
+
+ Even in strict mode, this inside an event listener still refers to the element.
+
+ Arrow functions do not have their own this; they inherit this from their surrounding scope.
+
+ Using a let variable before it is declared will result in a ReferenceError:
+
+ JavaScript const variables must be assigned a value when they are declared:
+
+
+Use const when you declare:
+
+A new Array
+A new Object
+A new Function
+A new RegExp
+
+ variables declared with let and const are hoisted but remain in the 
+ "Temporal Dead Zone" (TDZ) until they are assigned a value. 
+
+
+
+ JavaScript Operators
+
+Arithmetic Operators
+Assignment Operators
+Comparison Operators
+String Operators
+Logical Operators
+Bitwise Operators
+Ternary Operators
+Type Operators
+
+
+
+Bit operators work on 32 bits numbers.
+
+All JavaScript numbers are stored in a 64-bit floating-point format.
+
+x <<= n is equivalent to x = x * 2^n
+
+??= Operator = Nullish coalescing assignment operator
+
+JavaScript has 8 Datatypes
+String
+Number
+Bigint
+Boolean
+Undefined
+Null
+Symbol
+Object -  built-in objects, user defined objects
+
+Built-in object types can be:
+objects, arrays, dates, maps, sets, intarrays, floatarrays, promises, and more.
+
+functionName refers to the function object, and functionName() refers to the function result.
+
+
+JavaScript Object Literal
+
+name:value pairs are also called key:value pairs.
+object literals are also called object initializers.
+
+
+Objects written as name value pairs are similar to:
+
+Associative arrays in PHP
+Dictionaries in Python
+Hash tables in C
+Hash maps in Java
+Hashes in Ruby and Perl
+
+Only declarations are hoisted, not initializations.
+🔹 Variables declared with var are hoisted with undefined,
+but let and const are hoisted in a "Temporal Dead Zone" (TDZ).
+
+Function Declarations (Fully Hoisted)
+Function Expressions (Not Hoisted)
+
+
+ arr.__proto__ == Array.prototype
+ func.__proto__ == Function.prototype
+ arr.__proto__.__proto__ == Object.prototype
+ function.__proto__.__proto__ == Object.prototype
+ Object.prototype.__proto__ = null
+
+
+Never do this
+ objects.__proto__ = object;
+
+
+substring() is similar to slice().
+The difference is that start and end values less than 0 are treated 
+as 0 in substring().
+substr() is similar to slice().
+The difference is that the second parameter specifies the length of the extracted part.
+The substr() method is removed (deprecated) in the latest JavaScript standard.
+Use substring() or slice() instead.
+
+Automatic replacing of variables with real values is called string interpolation.
+
+The g (global) flag must be set when using a regular expression in replaceAll().
+
+The search() method cannot take a second start position argument.
+The indexOf() method cannot take powerful search values (regular expressions).
