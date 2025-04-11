@@ -24,7 +24,7 @@ function add(a){
 
 console.log(add(2)(4)(7)(5)());
 
-
+//partial functions
 function sum(a){
     return function(b, c){
         return a+b+c;

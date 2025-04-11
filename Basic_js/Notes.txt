@@ -161,3 +161,7 @@ The g (global) flag must be set when using a regular expression in replaceAll().
 
 The search() method cannot take a second start position argument.
 The indexOf() method cannot take powerful search values (regular expressions).
+
+Lazy loading in JavaScript is like saying:
+"Don't load everything right now — load it only when needed."
+ex. IntersectionObserver is the magic ✨ that watches for when an element enters the screen.

@@ -1,0 +1,72 @@
+let num = 5;
+console.log(num, typeof num)
+
+let num1 = '5';
+console.log(num1, typeof num1)
+
+let num2 = Number(num1)
+
+console.log(num2, typeof num2)
+
+let x
+console.log(x, typeof x)
+
+x = 8
+console.log(x, typeof x)
+
+console.log(typeof (x+''))
+
+x = "Hello"
+console.log(x, typeof x)
+
+x = !x
+console.log(x, typeof x)
+x = !x
+console.log(x, typeof x)
+
+console.log(6, Boolean(6))
+console.log(!6, Boolean(!6))
+
+console.log(0, Boolean(0))
+
+console.log(-6, Boolean(-6))
+console.log(-0, Boolean(-0))
+
+console.log(null, Boolean(null))
+console.log(undefined, Boolean(undefined))
+console.log(NaN, Boolean(NaN))
+console.log(" ", Boolean(" "))
+console.log("", Boolean(""))
+
+let a = 1
+let b = 2
+let c = "5"
+
+console.log(a + b + c)
+console.log(c + a + b) //addition converts number into string
+
+console.log(c-b, typeof (c-b)) //subtraction converts string into number
+
+let y = "Hello"
+let z = "Hii"
+console.log(y-c, typeof (y-c))
+console.log(y-a, typeof (y-a))
+console.log(y-"hii", typeof (y-"hii"))
+console.log(y-z, typeof (y-z))
+
+console.log(Number(y))
+
+let d = c + 3
+console.log(d, typeof d)
+
+d = +c + 3
+console.log(d, typeof d)
+
+let tmp = Number("123 Gauri")
+console.log(tmp, typeof tmp)
+
+tmp = parseInt("123 Gauri")
+console.log(tmp, typeof tmp)
+
+tmp = parseInt("Gauri 123")
+console.log(tmp, typeof tmp)

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            min-width: 100px;
+            min-height: 100px;
+            border: 2px black solid;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body onload="console.log('Page Loaded!')">
+    <div id="demo"></div>
+    <button onclick="document.getElementById('demo').innerHTML = Date()"> The time is?</button>
+    <br>
+    <br>
+    <button onclick="this.innerHTML = Date()"> The time is?</button>
+    <br>
+    <br>
+    <input type="text" onchange="alert('Input changed!')" />
+    <div onmouseover="console.log('Mouse over!')" style="width:100px; height:100px; background:lightblue;"></div>
+    <div onmouseout="console.log('Mouse out!')" style="width:100px; height:100px; background:lightgreen;"></div>
+    <input type="text" onkeydown="console.log('Key pressed!')" />
+
+    <!-- Event Bubbling -->
+     <div class="grandparent">
+        <div class="parent">
+            <div class="child">
+                <button>Click me</button>
+            </div>
+        </div>
+     </div>
+
+
+    <!-- Event Listener -->
+    <button id="myBtn"> Hello </button>  
+    <script>
+        document.getElementById("myBtn").addEventListener("click", DisplayMsg);
+        function DisplayMsg(){
+            console.log("Hello")
+        }
+    </script>  
+    <script src="events.js"></script>
+</body>
+
+</html>
